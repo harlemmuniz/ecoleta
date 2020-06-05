@@ -1,0 +1,87 @@
+@media (max-width: 450px) {
+    #page-create-point .items-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    #page-create-point header {
+        margin-top: 48px 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    #page-home .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr 10%;
+        grid-template-areas: 'cabecalho' 'conteudo' 'cadastro'
+    }
+    #page-home .content main h1 {
+        font-size: 42px;
+    }
+    #page-home .content div {
+        display: none;
+    }
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+    #page-search-results .cards img {
+        height: 200px;
+    }
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+    #page-create-point form .field-group .field+.field {
+        margin-left: 0px;
+    }
+}
+
+@media (width: 768px) and (height: 1024px) {
+    #page-home .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr 1fr 10%;
+        grid-template-areas: 'cabecalho' 'background' 'conteudo' 'cadastro'
+    }
+    #page-home .content div {
+        background-position-x: -10vw;
+        background-position-y: 0vw;
+    }
+}
+
+@media (width: 1024px) and (height: 768px) {
+    #page-home .content {
+        display: grid;
+        max-height: 100vh;
+        max-width: 100vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: 'cabecalho cadastro' 'conteudo background';
+    }
+    #page-home .content div {
+        background-position-x: -25vw;
+        background-position-y: 10vw;
+    }
+}
+
+@media (width: 1024px) and (height: 1366px) {
+    #page-home .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr 1fr 10%;
+        grid-template-areas: 'cabecalho' 'background' 'conteudo' 'cadastro'
+    }
+    #page-home .content div {
+        background-position-x: 5vw;
+        background-position-y: 5vw;
+    }
+}
+
+@media (width: 1366px) and (height: 1024px) {
+    #page-home .content {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: 'cabecalho cadastro' 'conteudo background';
+    }
+    #page-home .content div {
+        background-position-x: -15vw;
+        background-position-y: 20vw;
+    }
+}

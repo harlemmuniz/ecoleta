@@ -1,0 +1,170 @@
+#page-create-point {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75.688px 1fr;
+    grid-template-areas: 'cabecalho' 'formulario';
+}
+
+#page-create-point header {
+    margin-top: 48px;
+    grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-create-point form {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#page-create-point header a {
+    display: flex;
+    color: var(--title-color);
+    font-weight: bold;
+    align-items: center;
+}
+
+#page-create-point header a span {
+    margin-right: 16px;
+    display: flex;
+    background-image: url('../assets/arrow-left.svg');
+    width: 20px;
+    height: 24px;
+}
+
+#page-create-point form {
+    grid-area: formulario;
+    align-items: initial;
+    background-color: white;
+    margin: 80px auto;
+    max-width: 730px;
+    padding: 64px;
+    border-radius: 8px;
+}
+
+#page-create-point form h1 {
+    font-size: 36px;
+}
+
+#page-create-point form fieldset {
+    margin-top: 64px;
+    border: 0
+}
+
+#page-create-point form legend {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#page-create-point form legend h2 {
+    font-size: 24px;
+}
+
+#page-create-point form legend span {
+    color: var(--title-color);
+    font-size: 14px;
+}
+
+#page-create-point form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+#page-create-point form .field-group {
+    display: flex;
+}
+
+#page-create-point form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#page-create-point form input,
+#page-create-point form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px;
+    font-size: 16px;
+    /* outline: none; */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#page-create-point form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#page-create-point form .field-group .field+.field {
+    /* endereço + numero */
+    margin-left: 24px;
+}
+
+#page-create-point form button {
+    max-width: 260px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 40px;
+    transition: background-color 400ms;
+}
+
+#page-create-point form button:hover {
+    background-color: #2fB86E;
+}
+
+#page-create-point .items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+#page-create-point .items-grid li {
+    background-color: #F5F5F5;
+    list-style: none;
+    border: 2px solid #F5F5F5;
+    border-radius: 8px;
+    height: 180px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+
+#page-create-point .items-grid li span {
+    margin-top: 12px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: var(--title-color)
+}
+
+#page-create-point .items-grid li.selected {
+    background-color: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+#page-create-point .items-grid li img,
+#page-create-point .items-grid li span {
+    pointer-events: none;
+}
